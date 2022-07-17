@@ -1,0 +1,56 @@
+#DELIVERABLE 1
+
+#Use the library() function to load the dplyr package
+library(dplyr)
+
+#Import and read in the MechaCar_mpg.csv file as a dataframe.
+library(tidyverse)
+MechaCar_df <- read.csv(file='./Resources/MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
+
+#Perform linear regression using the lm() function
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaCar_df)
+
+#Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaCar_df))
+
+#Additional Step: eliminate the independent variables that have little impact on predicting mpg to see impact:
+lm(mpg ~ vehicle_length + ground_clearance, data=MechaCar_df)
+summary(lm(mpg ~ vehicle_length + ground_clearance, data=MechaCar_df))
+
+
+#DELIVERABLE 2
+
+#Import and read in the Suspension_Coil.csv file as a table.
+mecha_coil <- read.csv(file='./Resources/Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+
+#Create a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
+total_summary <- mecha_coil %>% summarize(Mean_PSI=mean(PSI),
+                                          Median_PSI=median(PSI),
+                                          Var_PSI=var(PSI),
+                                          Std_Dev_PSI=sd(PSI),
+                                          Num_Coil=n(), .groups = 'keep')
+
+#Create a lot_summary dataframe using the group_by() and the summarize() functions to group each manufacturing lot by the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
+lot_summary <- mecha_coil  %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI),
+                                                                         Median_PSI=median(PSI),
+                                                                         Var_PSI=var(PSI),
+                                                                         Std_Dev_PSI=sd(PSI),
+                                                                         num_Coil=n(), .groups = 'keep')
+
+#DELIVERABLE 3
+
+
+#T-Test on all lots
+t.test(mecha_coil$PSI, mu=1500)
+
+#T-Test on Lot 1
+Lot_1 <- mecha_coil[which(mecha_coil$Manufacturing_Lot =='Lot1'),]
+t.test(Lot_1$PSI, mu=1500)
+
+#T-Test on Lot 2
+Lot_2 <- mecha_coil[which(mecha_coil$Manufacturing_Lot =='Lot2'),]
+t.test(Lot_2$PSI, mu=1500)
+
+#T-Test on Lot 3
+Lot_3 <- mecha_coil[which(mecha_coil$Manufacturing_Lot =='Lot3'),]
+t.test(Lot_3$PSI, mu=1500)
