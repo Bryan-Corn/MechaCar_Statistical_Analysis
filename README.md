@@ -13,6 +13,7 @@ This project is a statistical analysis for AutosRUS. Linear Regression is used t
 
 ## Summary Statistics on Suspension Coils
 
-![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/Image2.png)
+![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/TotalSummary.png)
 
+![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/LotSummary.png)
 
