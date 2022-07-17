@@ -32,7 +32,9 @@ After imprting the data from Suspension_Coil.csv into a table, the total varianc
 
 ![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/T-Tests.png)
 
-briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+The T-test for all suspension coil lots shows that there is no statistically significant difference from the population mean and the p-Value is not low enough to reject the the null hypothesis. 
+
+As shown above, Lot 1 (t = 0) has very little-to-no variance with a p-Value of 1 and a 95% confidence of 1499.719 - 1500.281. Lot 2  has more variance than Lot 1 one but falls well within tolerance limits (t = 0.51745, p-Value = 0.6072). Lot 3 (t = -2.0916, p-Value = 0.04168) does not meet the variance standards and the manufacturing process needs review. Both lots 2 and 3 should more closely emulate the manufacturing process of Lot 1.
 
 
 
