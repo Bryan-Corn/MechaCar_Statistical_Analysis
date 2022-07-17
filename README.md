@@ -16,13 +16,14 @@ The p-Value for this model is 0.0000000000535 (or 5.35e-11) which is clearly sma
 The R-squared values (Multiple R-squared: 0.7149, Adjusted R-squared: 0.6825) indicate that ~70% of MPG predictions can be determined by this model, making it effectinve in predicting MPG for MechaCar prototypes. 
 
 
+
 ## Summary Statistics on Suspension Coils
 
 ![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/TotalSummary.png)
 
 ![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/LotSummary.png)
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+After imprting the data from Suspension_Coil.csv into a table, the total variance for all lots is under the threshold of 100 PSI. The variance for each lot indicates that there is an issue with Lot 3 (Var_PSI = 170.2861224), as it is the only lot with a variance greater than 100 PSI. Looking further, Lots 1 (Var_PSI = 0.979) and 2 (Var_PSI = 7.469) have very little variance and are well within tolerance limits while Lot 3 has almost enough variance to siggest a problem for total production.
 
 
 
