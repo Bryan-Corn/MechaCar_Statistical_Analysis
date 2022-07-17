@@ -22,4 +22,6 @@ This project is a statistical analysis for AutosRUS using R and RStudio with two
 
 ![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/T-Tests.png)
 
-## Suggestion for Future Study
+
+
+## Study Design: MechaCar vs Competition
