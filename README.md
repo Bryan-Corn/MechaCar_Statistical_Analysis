@@ -1,9 +1,9 @@
 # MechaCar_Statistical_Analysis
 Module 15
 
-# Overview
+## Overview
 
-This project is a statistical analysis for AutosRUS. Linear Regression is used to predict MPG on prototype vehiles and determine what factors are most inportant in predicting the MPG. Summary descriptive statistics and T-tests are used to assess the manufacturing consistency of suspension coils. The final deliverable of this project is a suggested study to compare MechaCar with competitors.
+This project is a statistical analysis for AutosRUS using R and RStudio with two provided csv data files (located in the 'Resources' folder here. Linear Regression is used to predict MPG on prototype vehiles and determine what factors are most inportant in predicting the MPG. Summary descriptive statistics and T-tests are used to assess the manufacturing consistency of suspension coils. The final deliverable of this project is a suggested study to compare MechaCar with competitors.
 
 ## Linear Regression to Predict MPG
 
@@ -21,3 +21,5 @@ This project is a statistical analysis for AutosRUS. Linear Regression is used t
 ## T-Tests on Suspension Coils
 
 ![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/T-Tests.png)
+
+## Suggestion for Future Study
