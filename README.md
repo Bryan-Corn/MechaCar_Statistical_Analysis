@@ -1,3 +1,4 @@
+![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/AutoLot.png)
 # MechaCar_Statistical_Analysis
 Module 15
 
@@ -16,7 +17,7 @@ The p-Value for this model is 0.0000000000535 (or 5.35e-11) which is clearly sma
 The R-squared values (Multiple R-squared: 0.7149, Adjusted R-squared: 0.6825) indicate that ~70% of MPG predictions can be determined by this model, making it effectinve in predicting MPG for MechaCar prototypes. 
 
 
-
+![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/SportSprings.png)
 ## Summary Statistics on Suspension Coils
 
 ![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/TotalSummary.png)
