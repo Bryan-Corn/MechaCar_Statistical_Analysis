@@ -40,11 +40,4 @@ As shown above, Lot 1 (t = 0) has very little-to-no variance with a p-Value of 1
 
 ## Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating
-
-
-In your description, address the following questions:
-• What metric or metrics are you going to test?
-• What is the null hypothesis or alternative hypothesis?
-• What statistical test would you use to test the hypothesis? And why?
-• What data is needed to run the statistical test?
+Because we already have a good start with our statistical analysis of suspension coils PSI, a future study could examine the variance of MechaCar's suspension coil PSI variance versus sample lots of various competitors' coils. T-tests for each sample lot could be used to asses each competitor and an ANOVA test could be conducted to describe the significance of the variance between each sample and MechaCar's manufacturing. The data needed would be the same suspension coil data that was used in this project but collected from more samaples from other manufacturers. The null hypothesis would be that there is no significant statistical difference in PSI variance.
