@@ -9,11 +9,11 @@ This project is a statistical analysis for AutosRUS using R and RStudio with two
 
 ![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/Image1.png)
 
-write a short summary using a screenshot of the output from the linear regression, and address the following questions:
+Using the 'dplyer' and 'tidyverse' python libraries and importing the MechaCar_mpg.csv file into a DataFrame in RStudio, a linear fitting model is created using the lm() function for all independent variables. As seen in the image above, the 'vehicle_length' and 'ground_clearance' varibales were found to have a non-random impact on MPG while vehicle_weight, spoiler_angle, and AWD have p-Values showing random variance.
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-Is the slope of the linear model considered to be zero? Why or why not?
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+The p-Value for this model is 0.0000000000535 (or 5.35e-11) which is clearly smaller than the significance level of 0.05% and is sufficient to reject the null hypothesis. This indicates that the slope of the linear model is not zero.
+
+The R-squared values (Multiple R-squared: 0.7149, Adjusted R-squared: 0.6825) indicate that ~70% of MPG predictions can be determined by this model, making it effectinve in predicting MPG for MechaCar prototypes. 
 
 
 ## Summary Statistics on Suspension Coils
