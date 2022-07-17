@@ -7,12 +7,12 @@ This project is a statistical analysis for AutosRUS. Linear Regression is used t
 
 ## Linear Regression to Predict MPG
 
-![image]()
+![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/Image1.png)
 
 
 
 ## Summary Statistics on Suspension Coils
 
-![image]()
+![image](https://github.com/Bryan-Corn/MechaCar_Statistical_Analysis/blob/main/Images/Image2.png)
 
 
